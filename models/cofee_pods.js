@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var CofeeMachineSchema = new Schema({
+var CofeePodSchema = new Schema({
 
     cofee_pod_id: {
         type: String
@@ -41,12 +41,12 @@ var CofeeMachineSchema = new Schema({
 });
 
 
-CofeeMachineSchema.virtual('id').get(function () {
+CofeePodSchema.virtual('id').get(function () {
 
     return this._id;
 });
 
-CofeeMachineSchema.set('toJSON', {
+CofeePodSchema.set('toJSON', {
     virtuals: true,
     transform: function (doc, ret) {
         delete ret._id;
@@ -55,6 +55,6 @@ CofeeMachineSchema.set('toJSON', {
 });
 
 
-module.exports = mongoose.model('CofeeMachines', CofeeMachineSchema);
+module.exports = mongoose.model('CofeePods', CofeePodSchema);
 
 

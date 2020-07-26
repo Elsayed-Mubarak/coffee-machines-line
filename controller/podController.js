@@ -13,7 +13,7 @@ exports.createCoffeePods = async (req, res) => {
         })
     }
     try {
-        const savedPods = await req.body.forEach(element => { CoffeePod.create(element) });
+        const savedPods = await CoffeePod.insertMany(req.body);
         res.status(201).json({
             sucess: true,
             message: "pods added sucess",

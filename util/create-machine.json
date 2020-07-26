@@ -1,0 +1,42 @@
+[{
+    "cofee_machine_id":"CM001",
+    "product_type":"COFFEE_MACHINE_SMALL",
+    "model":"base model"
+},{
+    "cofee_machine_id":"CM002",
+    "product_type":"COFFEE_MACHINE_SMALL",
+    "model":"premium model"
+},{
+    "cofee_machine_id":"CM003",
+    "product_type":"COFFEE_MACHINE_SMALL",
+    "water_line_compatible":true,
+    "model":"deluxe model"
+},{
+    "cofee_machine_id":"CM101",
+    "product_type":"COFFEE_MACHINE_LARGE",
+    "model":"base model"
+},{
+    "cofee_machine_id":"CM102",
+    "product_type":"COFFEE_MACHINE_LARGE",
+    "water_line_compatible":true,
+    "model":"premium model"
+},{
+    "cofee_machine_id":"CM103",
+    "product_type":"COFFEE_MACHINE_LARGE",
+    "water_line_compatible":true,
+    "model":"deluxe model"
+},{
+    "cofee_machine_id":"EM001",
+    "product_type":"ESPRESSO_MACHINE",
+    "model":"base model"
+},{
+    "cofee_machine_id":"EM002",
+    "product_type":"ESPRESSO_MACHINE",
+    "model":"premium model"
+},{
+    "cofee_machine_id":"EM003",
+    "product_type":"ESPRESSO_MACHINE",
+    "water_line_compatible":true,
+    "model":"deluxe model"
+}
+]

@@ -6,7 +6,6 @@ var CoffeeMachine = require('../models/coffee_machines')
 // Inser Machines into db
 exports.createCoffeeMachines = async (req, res) => {
 
-
     if (!(req.body)) {
         return res.status(400).send({
             sucess: false,
@@ -14,12 +13,12 @@ exports.createCoffeeMachines = async (req, res) => {
         })
     }
     try {
-        const savedMachine = await req.body.forEach(element => { CoffeeMachine.create(element) });
-        res.status(201).json({
+        var savedMachine = await CoffeeMachine.insertMany(req.body);
+        return res.status(201).json({
             sucess: true,
             message: "machine added sucess",
             data: savedMachine
-        })
+        });
     } catch (err) {
         res.status(400).json({
             sucess: false,
